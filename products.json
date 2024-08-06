@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Knife Set: 14 PC",
+        "description": "Upgrade your kitchen with the elegant White and Gold Knife Set. This 14-piece set features titanium-coated gold and white knives with a self-sharpening block.",
+        "mrp": 199.99,
+        "salePrice": 159.99,
+        "image": "images/sale1item.png"
+    },
+    {
+        "id": 2,
+        "name": "Paring Knife",
+        "description": "Perfect for peeling and other small or intricate work.",
+        "mrp": 14.99,
+        "salePrice": 10.99,
+        "image": "images/sale2item.png"
+    },
+    {
+        "id": 3,
+        "name": "Bread Knife",
+        "description": "Serrated blade for cutting through bread without crushing it.",
+        "mrp": 19.99,
+        "salePrice": 15.99,
+        "image": "images/sale3item.png"
+    }
+]

@@ -1,0 +1,34 @@
+<body>
+    <header>
+        <h1>The Blade Spectrum</h1>
+        <button id="home-button">
+            <img src="images/home-icon.png" alt="Home Icon"> Home Page
+        </button>
+        <button id="cart-button">
+            <img src="images/cart-icon.png" alt="Cart Icon"> Go to Cart
+        </button>
+        <button id="wishlist-button">
+            <img src="images/wishlist-icon.png" alt="Wishlist Icon"> Go to Wishlist
+        </button>
+    </header>
+    <main>
+        <div class="container">
+            <section id="product-list" class="product-list"></section>
+            <section id="cart" class="cart" style="display: none;">
+                <h2>Shopping Cart</h2>
+                <div id="cart-list"></div>
+                <div class="cart-summary">
+                    <p>Price: $<span id="total-price">0.00</span></p>
+                    <p>Total Tax: $<span id="total-tax">0.00</span></p>
+                    <p>Total: $<span id="complete-total">0.00</span></p>
+                    <button id="checkout">Checkout</button>
+                </div>
+            </section>
+            <section id="wishlist" class="wishlist" style="display: none;">
+                <h2>Wishlist</h2>
+                <div id="wishlist-list"></div>
+            </section>
+        </div>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
