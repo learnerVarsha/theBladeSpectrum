@@ -46,6 +46,13 @@ header h1 {
     margin: 0;
 }
 
+.logo-img {
+    width: auto;
+    height: 55px;
+    margin: 0 1em;
+    display: block;
+}
+
 header button {
     background-color: var(--secondary-color);
     color: white;

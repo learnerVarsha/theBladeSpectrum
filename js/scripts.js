@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('cart-button').addEventListener('click', () => showSection('cart'));
     document.getElementById('home-button').addEventListener('click', () => showSection('product-list'));
     document.getElementById('wishlist-button').addEventListener('click', () => showSection('wishlist'));
+    document.getElementById('logo').addEventListener('click', () => showSection('product-list'));
 });
 
 const displayProducts = (products) => {
