@@ -1,34 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blade Spectrum</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
     <header>
         <h1>The Blade Spectrum</h1>
-        <button id="home-button">
+        <button id="home-button" style="display: none;">
             <img src="images/home-icon.png" alt="Home Icon"> Home Page
         </button>
         <button id="cart-button">
-            <img src="images/cart-icon.png" alt="Cart Icon"> Go to Cart
+            <img src="images/cart-icon.png" alt="Cart Icon">
+            <span id="cart-count" class="cart-count">0</span>
         </button>
         <button id="wishlist-button">
-            <img src="images/wishlist-icon.png" alt="Wishlist Icon"> Go to Wishlist
+            <img src="images/goToWishlist.png" alt="Wishlist Icon"> Go to Wishlist
         </button>
     </header>
     <main>
-        <div class="container">
-            <section id="product-list" class="product-list"></section>
-            <section id="cart" class="cart" style="display: none;">
-                <h2>Shopping Cart</h2>
-                <div id="cart-list"></div>
-                <div class="cart-summary">
-                    <p>Price: $<span id="total-price">0.00</span></p>
-                    <p>Total Tax: $<span id="total-tax">0.00</span></p>
-                    <p>Total: $<span id="complete-total">0.00</span></p>
-                    <button id="checkout">Checkout</button>
-                </div>
-            </section>
-            <section id="wishlist" class="wishlist" style="display: none;">
-                <h2>Wishlist</h2>
-                <div id="wishlist-list"></div>
-            </section>
-        </div>
+        <section id="product-list" class="product-list"></section>
+        <section id="product-details" class="product-details" style="display: none;"></section>
+        <section id="cart" class="cart" style="display: none;">
+            <h2>Shopping Cart</h2>
+            <div id="cart-list"></div>
+            <div class="cart-summary">
+                <p>Price: $<span id="total-price">0.00</span></p>
+                <p>Total Tax: $<span id="total-tax">0.00</span></p>
+                <p>Total: $<span id="complete-total">0.00</span></p>
+                <button id="checkout">Checkout</button>
+            </div>
+        </section>
+        <section id="wishlist" class="wishlist" style="display: none;">
+            <h2>Wishlist</h2>
+            <div id="wishlist-list"></div>
+        </section>
     </main>
     <script src="js/scripts.js"></script>
 </body>
+</html>
