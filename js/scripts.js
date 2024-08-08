@@ -19,20 +19,28 @@ document.addEventListener('DOMContentLoaded', () => {
 const displayProducts = (products) => {
     const productList = document.getElementById('product-list');
     productList.innerHTML = ''; // Clear any existing products
+    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
     products.forEach(product => {
         const productDiv = document.createElement('div');
         productDiv.classList.add('product');
+
+        // Define isInWishlist variable to check if the product is in the wishlist
+        const isInWishlist = wishlist.some(item => item.id === product.id);
+
         productDiv.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
             <p>$${product.salePrice.toFixed(2)}</p>
             <button onclick="viewProductDetails(${product.id})">View Details</button>
             <button onclick="addToCart(${product.id})">Add to Cart</button>
-            <button onclick="addToWishlist(${product.id})">Add to Wishlist</button>
+            <button onclick="addToWishlist(${product.id})" 
+                ${isInWishlist ? 'disabled' : ''}>${isInWishlist ? 'Added to Wishlist' : 'Add to Wishlist'}</button>
         `;
         productList.appendChild(productDiv);
     });
 };
+
 
 const viewProductDetails = (id) => {
     const products = JSON.parse(localStorage.getItem('products'));
@@ -124,6 +132,11 @@ const addToWishlist = (id) => {
         wishlist.push(product);
         localStorage.setItem('wishlist', JSON.stringify(wishlist));
         updateWishlistDisplay(wishlist);
+
+         // Change button text to "Added to Wishlist"
+         const addButton = document.querySelector(`button[onclick="addToWishlist(${id})"]`);
+         addButton.innerText = "Added to Wishlist";
+         addButton.disabled = true; // Optionally disable the button after adding
     }
 };
 
@@ -223,6 +236,13 @@ const removeFromWishlist = (id) => {
     wishlist = wishlist.filter(item => item.id !== id);
     localStorage.setItem('wishlist', JSON.stringify(wishlist));
     updateWishlistDisplay(wishlist);
+
+    // Change button text back to "Add to Wishlist"
+    const addButton = document.querySelector(`button[onclick="addToWishlist(${id})"]`);
+    if (addButton) {
+        addButton.innerText = "Add to Wishlist";
+        addButton.disabled = false; // Re-enable the button
+    }
 };
 
 document.getElementById('checkout').addEventListener('click', () => {
