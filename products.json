@@ -9,18 +9,123 @@
     },
     {
         "id": 2,
-        "name": "Paring Knife",
-        "description": "Perfect for peeling and other small or intricate work.",
-        "mrp": 14.99,
-        "salePrice": 10.99,
+        "name": "Knife Set: 8 PC",
+        "description": "This fabulous collection includes a chef's knife, santoku knife, paring knife, utility knife, 4 steak knives, kitchen shears and a heart-shaped knife block.",
+        "mrp": 149.99,
+        "salePrice": 120.99,
         "image": "images/sale2item.png"
     },
     {
         "id": 3,
-        "name": "Bread Knife",
-        "description": "Serrated blade for cutting through bread without crushing it.",
-        "mrp": 19.99,
-        "salePrice": 15.99,
+        "name": "Knife Set: 10 PC",
+        "description": "With this set, you'll get a total of nine dependable knives, as well as a pair of kitchen shears, to help you make your best meals yet.",
+        "mrp": 129.99,
+        "salePrice": 110.99,
         "image": "images/sale3item.png"
+    },
+    {
+        "id": 4,
+        "name": "Knife Set: 16 PC",
+        "description": "Complete your kitchen with this 16-piece knife set, featuring high-carbon stainless steel blades for precision and durability.",
+        "mrp": 219.99,
+        "salePrice": 175.99,
+        "image": "images/sale4item.png"
+    },
+    {
+        "id": 5,
+        "name": "Knife Set: 6 PC",
+        "description": "Perfect for beginners, this 6-piece knife set includes all the essentials for everyday cooking.",
+        "mrp": 79.99,
+        "salePrice": 59.99,
+        "image": "images/sale5item.png"
+    },
+    {
+        "id": 6,
+        "name": "Knife Set: 20 PC",
+        "description": "This 20-piece knife set includes all the knives you need for your kitchen, housed in a beautiful wooden block.",
+        "mrp": 249.99,
+        "salePrice": 199.99,
+        "image": "images/sale6item.png"
+    },
+    {
+        "id": 7,
+        "name": "Knife Set: 12 PC",
+        "description": "A versatile 12-piece knife set with ergonomic handles and razor-sharp blades.",
+        "mrp": 189.99,
+        "salePrice": 149.99,
+        "image": "images/sale7item.png"
+    },
+    {
+        "id": 8,
+        "name": "Knife Set: 18 PC",
+        "description": "This 18-piece knife set is perfect for serious chefs who need a variety of knives for different tasks.",
+        "mrp": 229.99,
+        "salePrice": 189.99,
+        "image": "images/sale8item.png"
+    },
+    {
+        "id": 9,
+        "name": "Knife Set: 5 PC",
+        "description": "Compact and efficient, this 5-piece knife set is perfect for small kitchens.",
+        "mrp": 69.99,
+        "salePrice": 49.99,
+        "image": "images/sale9item.png"
+    },
+    {
+        "id": 10,
+        "name": "Knife Set: 15 PC",
+        "description": "This 15-piece knife set offers a great balance of quality and value, with a sleek black finish.",
+        "mrp": 199.99,
+        "salePrice": 159.99,
+        "image": "images/sale10item.png"
+    },
+    {
+        "id": 11,
+        "name": "Knife Set: 11 PC",
+        "description": "A reliable 11-piece knife set with comfortable handles and high-quality blades.",
+        "mrp": 139.99,
+        "salePrice": 109.99,
+        "image": "images/sale11item.png"
+    },
+    {
+        "id": 12,
+        "name": "Knife Set: 17 PC",
+        "description": "This 17-piece knife set includes a variety of knives and kitchen shears for all your cooking needs.",
+        "mrp": 239.99,
+        "salePrice": 189.99,
+        "image": "images/sale12item.png"
+    },
+    {
+        "id": 13,
+        "name": "Knife Set: 13 PC",
+        "description": "A 13-piece knife set with a modern design and precision-engineered blades.",
+        "mrp": 179.99,
+        "salePrice": 149.99,
+        "image": "images/sale13item.png"
+    },
+    {
+        "id": 14,
+        "name": "Knife Set: 9 PC",
+        "description": "This 9-piece knife set is perfect for everyday use, featuring a stylish and compact block.",
+        "mrp": 119.99,
+        "salePrice": 99.99,
+        "image": "images/sale14item.png"
+    },
+    {
+        "id": 15,
+        "name": "Knife Set: 19 PC",
+        "description": "This 19-piece knife set includes a wide range of knives for every culinary task.",
+        "mrp": 259.99,
+        "salePrice": 219.99,
+        "image": "images/sale15item.png"
+    },
+    {
+        "id": 16,
+        "name": "Knife Set: 7 PC",
+        "description": "A simple and affordable 7-piece knife set, perfect for beginners.",
+        "mrp": 89.99,
+        "salePrice": 69.99,
+        "image": "images/sale16item.png"
     }
+
 ]
