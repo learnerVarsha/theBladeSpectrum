@@ -31,7 +31,9 @@ const displayProducts = (products) => {
         productDiv.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
-            <p>$${product.salePrice.toFixed(2)}</p>
+            <p class="price">Price: 
+            <strong>$${product.salePrice.toFixed(2)}</strong>
+            <del>$${product.mrp.toFixed(2)}</del></p>
             <button onclick="viewProductDetails(${product.id})">View Details</button>
             <button onclick="addToCart(${product.id})">Add to Cart</button>
             <button onclick="addToWishlist(${product.id})" 
@@ -52,8 +54,9 @@ const viewProductDetails = (id) => {
             <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
             <p>${product.description}</p>
-            <p>MRP: $${product.mrp.toFixed(2)}</p>
-            <p>Sale Price: $${product.salePrice.toFixed(2)}</p>
+            <p class="price">Price: 
+            <strong>$${product.salePrice.toFixed(2)}</strong>
+            <del>$${product.mrp.toFixed(2)}</del></p>
             <button onclick="addToCart(${product.id})">Add to Cart</button>
             <button onclick="addToWishlist(${product.id})">Add to Wishlist</button>
         `;

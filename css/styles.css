@@ -111,6 +111,7 @@ button {
     padding: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -159,3 +160,90 @@ button {
     transition: background-color 0.3s ease;
 }
 
+/* Container for the product details */
+#product-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#product-details img {
+    width: 100%;
+    max-width: 300px; /* Set a max-width for larger screens */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#product-details h3 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+#product-details p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Buttons styling in the product details section */
+/* #product-details button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+} */
+
+/* Media queries for responsiveness */
+@media (min-width: 600px) {
+    #product-details {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    #product-details img {
+        max-width: 100%;
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    #product-details div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 900px) {
+    #product-details {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        text-align: left;
+    }
+
+    #product-details img {
+        max-width: 400px;
+    }
+
+    #product-details h3 {
+        font-size: 2em;
+    }
+
+    #product-details p {
+        font-size: 1.3em;
+    }
+/* 
+    #product-details button {
+        font-size: 1.2em;
+        padding: 12px 20px;
+    } */
+}
