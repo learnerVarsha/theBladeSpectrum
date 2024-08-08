@@ -48,6 +48,9 @@ const displayProducts = (products) => {
 const viewProductDetails = (id) => {
     const products = JSON.parse(localStorage.getItem('products'));
     const product = products.find(p => p.id === id);
+    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    // Define isInWishlist variable to check if the product is in the wishlist
+    const isInWishlist = wishlist.some(item => item.id === product.id);
     if (product) {
         const detailsSection = document.getElementById('product-details');
         detailsSection.innerHTML = `
@@ -59,7 +62,8 @@ const viewProductDetails = (id) => {
             <strong>$${product.salePrice.toFixed(2)}</strong>
             <del>$${product.mrp.toFixed(2)}</del></p>
             <button onclick="addToCart(${product.id})">Add to Cart</button>
-            <button onclick="addToWishlist(${product.id})">Add to Wishlist</button>
+            <button onclick="addToWishlist(${product.id})" 
+                ${isInWishlist ? 'disabled' : ''}>${isInWishlist ? 'Added to Wishlist' : 'Add to Wishlist'}</button>
         `;
         showSection('product-details');
     }
@@ -141,6 +145,13 @@ const addToWishlist = (id) => {
          const addButton = document.querySelector(`button[onclick="addToWishlist(${id})"]`);
          addButton.innerText = "Added to Wishlist";
          addButton.disabled = true; // Optionally disable the button after adding
+
+         // Update the "Add to Wishlist" button in the product details view
+        const addButtonDetails = document.getElementById(`wishlist-button-${id}`);
+        if (addButtonDetails) {
+            addButtonDetails.innerText = "Added to Wishlist";
+            addButtonDetails.disabled = true;
+        }
     }
 };
 
